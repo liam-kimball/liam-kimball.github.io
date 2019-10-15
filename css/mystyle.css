@@ -1,0 +1,142 @@
+/*
+    http://weblab.cs.uml.edu/~lkimball/lkimball.html
+    Name: Liam Kimball
+    Email: Liam_Kimball@student.uml.edu
+    UMass Lowell Computer Science student
+    Date: 10/8/2019
+*/
+* {
+    box-sizing: border-box;
+}
+/* Body of the website, a background color seperate from other
+   components of the website */
+body {
+    background-color: rgb(50, 55, 62);
+    font-family: "courier";
+    font-size: 100%;
+    letter-spacing: 0.15em;
+    padding: 10px;
+}
+/* Page content has a max and min width and seperate color */
+.page {
+    max-width: 85%;
+    min-width: 720px;
+    margin: auto;
+    padding: 0px;
+    background-color: rgb(55, 59, 65);
+}
+/* Header of page with background image */
+.header   {
+    color: darkorange;
+    font-size: 150%;
+    text-align: center;
+    padding: 30px;
+    background-image: url("header_background_2.png");
+    background-color: rgb(25, 20, 28);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 940px;
+    height: 300px;
+}
+/* Defining text colors for h1, h2, and p */
+h2 {
+    color: steelblue;
+    }
+h3 {
+    color: steelblue;
+}
+p {
+    color: sandybrown;
+}
+/* A box to seperate contents of page */
+.box1 {
+    background: rgb(74, 77, 82);
+    padding: 20px;
+    margin-top: 20px;
+}
+/* Some boxes may contain clickable links */ 
+.box1 a {
+    color: steelblue;
+    text-decoration: none;
+}
+.box1 a:hover {
+    color: whitesmoke;
+}
+/* Use floats to create columns and rows for box */
+.columnleft {
+    float: left;
+    width: 60%;
+}
+.columnright {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+    }
+
+.contents:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Footer */
+.footer {
+    color: lightsteelblue;
+    padding: 20px;
+    text-align: center;
+    background: rgb(74, 77, 82);
+    margin-top: 20px;
+    }
+
+/* 
+    Dropdown navigation bar
+    From W3Schools example on dropdown nav bars
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+} 
+li {
+    float: left;
+} 
+li a, .dropbtn {
+    display: inline-block;
+    color: steelblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    color: rgb(113, 155, 189);
+    background-color: rgb(39, 37, 37);
+}
+.active {
+    background-color: rgb(63, 63, 63);
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(77, 76, 76);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: rgb(56, 128, 187);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+.dropdown-content a:hover {
+    background-color: #333;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}

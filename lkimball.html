@@ -1,0 +1,85 @@
+<!--
+    http://weblab.cs.uml.edu/~lkimball/lkimball.html
+    Name: Liam Kimball
+    Email: Liam_Kimball@student.uml.edu
+    UMass Lowell Computer Science student
+    Date: 10/8/2019
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Liam Kimball's website</title>
+        <link rel="stylesheet" href="css/mystyle.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- page content -->
+        <div class="page">
+            <div class="header">
+                <h1>Liam Kimball</h1>
+            </div>
+            <!-- Navigation bar with active, hover, and a dropdown -->
+            <ul class="nav">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <!-- 
+                    From W3Schools example on dropdown nav bars
+                    https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
+                -->
+                <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+                        <div class="dropdown-content">
+                          <a href="#">Assignment 1</a>
+                          <a href="#">Assignment 2</a>
+                          <a href="#">Assignment 3</a>
+                          <a href="#">Assignment 4</a>
+                        </div>
+                      </li>
+                <li style="float:right"><a href="#">Contact</a></li>
+            </ul>
+            <!-- The contents of the page seperated into a left and right columns -->
+            <div class="contents">
+                <div class="columnleft">
+                    <div class="box1">
+                        <h2>GUI Programming 1</h2>
+                        <p>Liam Kimball is a Computer Science student at UMass Lowell
+                            currently in his senior year. He will be pursing computer 
+                            science graduate studies.
+                        </p>
+                    </div> 
+                </div>
+                <div class="columnright">
+                    <!-- Boxes in right coloum have clickable headers -->
+                    <div class="box1">
+                        <h3><a href="#">Assignment 1</a></h3>
+                        <p>...Description of the assignment...</p>
+                    </div> 
+                    <div class="box1">
+                        <h3><a href="#">Assignment 2</a></h3>
+                        <p>...Description of the assignment...</p>
+                    </div>  
+                    <div class="box1">
+                        <h3><a href="#">Assignment 3</a></h3>
+                        <p>...Description of the assignment...</p>
+                    </div>
+                    <div class="box1">
+                        <h3><a href="#">Assignment 4</a></h3>
+                        <p>...Description of the assignment...</p>
+                    </div> 
+                </div>
+            </div>
+            <!-- Footer of the page with email and then html5 and css3 validation links -->
+            <div class="footer">
+                <h4>Contact: Liam_Kimball@student.uml.edu</h4>
+                <a href="https://validator.nu/?doc=http%3A%2F%2Fweblab.cs.uml.edu%2F%7Elkimball%2Flkimball.html">
+                <img style="border:0;width:60px;height:60px" src="html5.png" alt="HTML5 Logo">
+                </a>
+                &nbsp;&nbsp;
+                <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fweblab.cs.uml.edu%2F%7Elkimball%2Flkimball.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img style="border:0;width:60px;height:60px" src="css3.png" alt="CSS3 Logo">
+                </a>
+            </div>              
+        </div>        
+    </body>
+</html>
