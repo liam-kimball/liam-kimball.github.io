@@ -1,0 +1,69 @@
+<!--
+    http://weblab.cs.uml.edu/~lkimball/lkimball.html
+    Name: Liam Kimball
+    Email: Liam_Kimball@student.uml.edu
+    UMass Lowell Computer Science student
+    Date: 11/5/2019
+    Practice use of Javascript by creating 
+    an interactive dynamic table
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Interactive Dynamic Table</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- page content -->
+        <div class="jumbotron text-center">
+            <h1>Interactive Dynamic Table</h1> 
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form action="/action_page.php" class="was-validated">
+                    <div class="row">
+                    <h5>Enter horizontal axis numbers, order does not matter:</h5>
+                    </div>
+                    <div class="row">
+                    <div class="col form-group">
+                        <input type = "number" class="form-control" id = "x1" placeholder="Enter a number" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please input a valid number</div>
+                    </div>
+                    <div class="col form-group">
+                        <input type = "number" class="form-control" id = "x2" placeholder="Enter a number" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please input a valid number</div>
+                    </div>
+                    </div>
+                    <div class="row">                  
+                    <h5>Enter vertical axis numbers, order does not matter:</h5>
+                    </div>
+                    <div class="row">
+                    <div class="col form-group">
+                        <input type = "number" class="form-control" id = "y1" placeholder="Enter a number" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please input a valid number</div>
+                    </div>
+                    <div class="col form-group">
+                        <input type = "number" class="form-control" id = "y2" placeholder="Enter a number" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please input a valid number</div>
+                    </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="submitNums()">Submit</button>
+                </form>
+                <br><h3>TABLE: </h3>
+                <table id="multi" class="table"></table>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

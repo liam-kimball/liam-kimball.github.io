@@ -1,0 +1,19 @@
+  
+th {
+    background-color: rgb(0, 50, 100);
+    color: white;
+} 
+td:hover{
+    background-color: steelblue !important;
+}
+tr:nth-child(even) td:nth-child(odd), 
+tr:nth-child(odd) td:nth-child(even){
+    background-color: rgb(233, 233, 233);
+}
+th:hover {
+    background-color: plum;
+}
+
+td, th {
+    position: relative;
+}
