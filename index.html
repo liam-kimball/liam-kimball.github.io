@@ -11,66 +11,114 @@
         <meta charset="utf-8">
         <title>Liam Kimball's website</title>
         <link rel="stylesheet" href="css/mystyle.css">
-        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <!-- page content -->
-        <div class="page">
-            <div class="header">
-                <h1>Liam Kimball</h1>
-            </div>
-            <!-- Navigation bar with active, hover, and a dropdown -->
-            <ul class="nav">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <!-- 
-                    From W3Schools example on dropdown nav bars
-                    https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
-                -->
-                <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Assignments</a>
-                        <div class="dropdown-content">
-                          <a href="#">Assignment 1</a>
-                          <a href="#">Assignment 2</a>
-                          <a href="#">Assignment 3</a>
-                          <a href="#">Assignment 4</a>
+        <div class = "content">
+            <div class="header jumbotron text-center" style="margin-bottom:0">
+                <h1>Liam Kimball</h1><br><br><br>
+                <p>Welcome to my webpage</p>
+            </div> 
+            <!-- NavBar -->
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand active" href="index.html">Home</a>
+                
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <!-- Dropdown: Code  -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://liam-kimball.github.io/a8/">Interactive Dynamic Table</a>
+                            <a class="dropdown-item" href="https://liam-kimball.github.io/a9/">Scrabble</a>
                         </div>
-                      </li>
-                <li style="float:right"><a href="#">Contact</a></li>
-            </ul>
-            <!-- The contents of the page seperated into a left and right columns -->
-            <div class="contents">
-                <div class="columnleft">
-                    <div class="box1">
-                        <h2>GUI Programming 1</h2>
-                        <p>Liam Kimball is a Computer Science student at UMass Lowell
-                            currently in his senior year. He will be pursing computer 
-                            science graduate studies.
-                        </p>
-                    </div> 
-                </div>
-                <div class="columnright">
-                    <!-- Boxes in right coloum have clickable headers -->
-                    <div class="box1">
-                        <h3><a href="#">Assignment 1</a></h3>
-                        <p>...Description of the assignment...</p>
-                    </div> 
-                    <div class="box1">
-                        <h3><a href="#">Assignment 2</a></h3>
-                        <p>...Description of the assignment...</p>
-                    </div>  
-                    <div class="box1">
-                        <h3><a href="#">Assignment 3</a></h3>
-                        <p>...Description of the assignment...</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/liam-kimball">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <div class="container" style="margin-top:30px">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="box">
+                            <h2>About Me</h2>
+                            <img id="profilepic" src="img/profilepic.jpg">
+                            <p>Liam Kimball is a Computer Science student at UMass Lowell
+                                    currently in his senior year. He will be pursing computer 
+                                    science graduate studies.
+                            </p>
+                            <a href="aboutme.html">Learn more...</a>
+
+                        </div>
+                        <div class="box">
+                            <h3>Assignments</h3>
+                            <p>These link to github of each assignments source code</p>
+                            <ul class="nav nav-pills flex-column">
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/Assignment1">Assignment 1</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/Assignment2">Assignment 2</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/Assignment3">Assignment 3</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/Assignment4">Assignment 4</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/Assignment5">Assignment 5</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/liam-kimball.github.io/tree/master/a6">Assignment 6</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/liam-kimball.github.io/tree/master/a7">Assignment 7</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="https://github.com/liam-kimball/liam-kimball.github.io/tree/master/a8">Assignment 8</a></li>
+                            </ul>
+                        </div>
+                        <hr class="d-sm-none">
                     </div>
-                    <div class="box1">
-                        <h3><a href="#">Assignment 4</a></h3>
-                        <p>...Description of the assignment...</p>
-                    </div> 
+                    <div class="col-sm-8">
+                        <div class="box">
+                            <h5>This webpage is a continuous work-in-progress</h5>
+                            <p>This website serves as a place for Liam to learn web dev. Things will be constantly 
+                                changing and updating. Most of whats on this website is dedicated to my senior
+                                project sequence of UMass Lowell's GUI Programming I & II.
+                                
+                            </p>
+                        </div>
+                        <div class="box"> 
+                            <h2>GUI Programming 1</h2>
+                            <h5>Fall 2019</h5>
+                            <p>This is a first course in the design and implementation of graphical user interfaces
+                                (GUIs) for web-based environments. The course requires the completion of several 
+                                client-side programming projects that are evaluated on design and layout of the user
+                                interface, coding style, and comprehensiveness of documentation. Students learn to 
+                                create web pages using HTML, CSS, JavaScript, jQuery, and a variety of jQuery plugins. 
+                                Server-side techniques using PHP and MySQL are explored if time permits. The course 
+                                may be taken on its own, but is intended to be followed by 91.462 to complete a 
+                                two-course CS project sequence.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <h2>Projects</h2>
+                            <h4>Interactive Dynamic Table</h4>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item"><a class="dropdown-item" href="https://liam-kimball.github.io/a6/index.html">Iteration 1</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://liam-kimball.github.io/a7/index.html">Iteration 2</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://liam-kimball.github.io/a8/index.html">Final Iteration</a> </li>
+                                </ul>
+                            
+                            <h4>Scrabble</h4>
+                            <ul class="nav nav-pills flex-column">
+                                <li class="nav-item"><a class="dropdown-item" href="https://liam-kimball.github.io/a9/index.html">Iteration 1</a></li>
+                            </ul>
+                    
+                            </div>
+                        
+                    </div>
                 </div>
             </div>
-            <!-- Footer of the page with email and then html5 and css3 validation links -->
-            <div class="footer">
+            <div class="footer jumbotron text-center bg-dark text-light" style="margin-bottom:0">
+                <br>
                 <h4>Contact: Liam_Kimball@student.uml.edu</h4>
                 <a href="https://validator.nu/?doc=http%3A%2F%2Fweblab.cs.uml.edu%2F%7Elkimball%2Flkimball.html">
                 <img style="border:0;width:60px;height:60px" src="img/html5.png" alt="HTML5 Logo">
@@ -79,7 +127,7 @@
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fweblab.cs.uml.edu%2F%7Elkimball%2Flkimball.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
                 <img style="border:0;width:60px;height:60px" src="img/css3.png" alt="CSS3 Logo">
                 </a>
-            </div>              
-        </div>        
+            </div>
+        </div>  
     </body>
 </html>
