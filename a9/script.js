@@ -42,9 +42,9 @@ function genBoard() {
         board += '<tr>'
         for (var j = 0; j < lengthOfRow; j++){
             if ( (Math.abs(j - i))%lengthOfRow == 2 || (Math.abs(j - i))%lengthOfRow == 5){
-                board += '<td><div id="droppable" class="droppD ui-widget-header"><img id="' + j + '" src="img/squareDouble.jpg"></div></td>';
+                board += '<td><div id="droppable" class="droppD ui-widget-header"><img id="' + j + '" src="img/squareDouble.png"></div></td>';
             }
-            else board += '<td><div id="droppable" class="dropp ui-widget-header"><img id="' + j + '" src="img/Square.jpg"></div></td>';
+            else board += '<td><div id="droppable" class="dropp ui-widget-header"><img id="' + j + '" src="img/square.png"></div></td>';
         }
         board += '</tr>';
     }
