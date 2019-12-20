@@ -1,0 +1,50 @@
+<!--
+    http://weblab.cs.uml.edu/~lkimball/lkimball.html
+    Name: Liam Kimball
+    Email: Liam_Kimball@student.uml.edu
+    UMass Lowell Computer Science student
+    Date: 12/19/2019
+    Create a simple implimentation of scrabble to
+    demonstrate JavaScript and jQuery
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scrabble</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <script src="validation.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/blitzer/jquery-ui.css"> -->
+        <script src="script.js"></script>
+
+
+
+    </head>
+    <body>
+        <!-- page content -->
+        <div class="jumbotron text-center bg-dark text-white">
+            <h1>Scrabble</h1> 
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div id="board" class="row"></div>
+                <div id="rack" class="row"></div>
+                <div id="score" class="row">
+                    <h3>Score:</h3>
+                    <h2 id="wordScore"></h2>
+                </div>
+                <button type="button" onclick="resetGame()">RESET</button>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </body>
+</html>
